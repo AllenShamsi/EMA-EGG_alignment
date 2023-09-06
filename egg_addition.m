@@ -1,4 +1,4 @@
-% Struct addition scriptsave
+% Struct addition script
 % Written by Jessica Goel
 % Last updated: 07/30/23
 
