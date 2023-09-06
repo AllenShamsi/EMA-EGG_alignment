@@ -1,5 +1,5 @@
 % EGG-EMA Signal Alignment
-% Last update: 07-30-2023
+% Last update: 09-06-2023
 
 % Clear the workspace and command window
 clc;
@@ -102,11 +102,10 @@ for i = 1:size(emaFiles)
 
     % Create filenames for the processed EGG audio and laryngogram signals
     egg_laryngogram_aligned_fileName = [emaFiles(i).name(1:end-4) '_EGG_laryngogram_aligned.wav'];
-    egg_audio_aligned_fileName = [emaFiles(i).name(1:end-4) '_EGG_audio_aligned.wav'];
 
     % Save the processed files to new .wav files
     audiowrite(egg_laryngogram_aligned_fileName, egg_laryngogram_aligned, egg_sampRate);
-    %audiowrite(egg_audio_aligned_fileName, egg_audio_aligned, egg_sampRate);
+    
 end
 
 fprintf('Processing completed for all files.\n');
